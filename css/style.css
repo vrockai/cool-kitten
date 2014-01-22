@@ -181,6 +181,47 @@ a:visited {
 }
 
 
+/* Slide 5 */
+
+#slide5{
+    background-color:#ffffff;
+}
+#slide5 h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color:#8a8683;
+    font-weight: 700;
+}
+#slide5 h2 {
+    font-size: 2em;
+    color: #8a8683;
+    line-height: 0px;
+    padding-bottom:20px;
+    font-weight: 400;
+}
+
+/* Slide 6 */
+
+#slide6{
+    background-image:url('../images/sunglasses.png');
+    background-color:#8a8683;
+    color:#ffffff;
+}
+#slide6 h1 {
+    font-size: 3.8em;
+    letter-spacing: -3px;
+    line-height: 0px;
+    color:#ffffff;
+    font-weight: 700;
+}
+#slide6 h2 {
+    font-size: 2em;
+    color: #ffffff;
+    line-height: 0px;
+    padding-bottom:20px;
+    font-weight: 400;
+}
 
 
 
