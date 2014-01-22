@@ -23,8 +23,47 @@ a:visited {
 	text-decoration: none;
 }
 
+li.pdf {
+list-style-image: url("img/Pdf_icon.png");
+}
 
+.deprecated {
+text-decoration:line-through
+}
 
+/* Social icons */
+
+a.icon {
+display: inline-block;
+height: 64px;
+width: 64px;
+background-size: 64px 64px;
+background-position: center center;
+background-repeat: no-repeat;
+margin: 5px;
+text-indent: -9999em;
+color: #d0d2d4;
+text-decoration: none;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+}
+
+.si-facebook {
+background-color: #3b5998;
+background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABiElEQVR42u3avUoDQRSG4UBIDNpIllhZWAiWRgshRSBgaaOtguAPBkQvQE3nNeQqxFpbawsRRUQs7TaEFUUthPUrtooe3YGdODvnC7xsE+YMT0J2AluI41h1BCAAAQhAAAIQgAAEIIBZRVRFgSNVUXFYAE10hULUc6QQXaOWbYAyukOuvh7QiE2AAD07DPCCJmwD9B0GiFCNAJ4BvKPX5PqpBeAC7aIFNIUmk+sMmkf7vgJEaDXFPuZ8BHhDzZT7aPgIcIgKWgFCNG6wj7pvACd//O9ooGW0knTgF4D89R9D5xrOAdvCvCUtB6ENYd6OFoBNAigHaAvz9nwE6KLOQLO/HHk7P3SWZ4Bpg3lSx3kGqGcAcKod4FIzwCh60vwbEKCPvN8FjgaS7wLf39vlOYAnQQIQgAAEIAABCEAAAhDgPwAidwHsPyJTRvcWALaEeW3DdR5RxRpAUgvdoH6GrQmz1g3WuEWLw3pQsoRqmSV/ahWDNUp8VJYABCAAAQhAAAIQgAAESN0XsDffMaRkAuwAAAAASUVORK5CYII=);
+}
+
+.si-github {
+background-color: #4183c4;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADKklEQVR42u3aTUgUYQCH8bFISyMT2/zaMjpFRWESZCQrFgQVS2aaIVl0LNKLEHixgyVSFIGHvjzkMSiKvOT2cSi2wJIOJUVZEZilku5S2mplz0FhWOYdZ3Pnndl6//A7qXN4mJ1dd0abnJz8r6kAKoAKoAKoACqACqACqAAqgAogxRIUoRr1ODGlHtUogudfC5CPWnRiEDNtCAHUIT+RA6zBZYTwtwujDWsTKUAamjGKeG0MLVjo9gAF6IZde45CtwbwIwS7F8ZutwUoxwRk7Scq3RLAhx+QvQhKnQ6Qh0+IXi+CGMFsF0IQvYjeZyxzMsAtGG2bLtAxvEGse4s6eKGhFEbrcCpAOYwWNvg0twgn0YFGVMGHwik+7EMjOtCMxdB0Mk3OqErZAVLQA6O9Rwq0OJuHXhjtNeZLDEBx8fqQakOABfgI0fbLDHAXZltny0dr8z2QFWAFIhDtA/JsCJCDdxBtHCtlBDgIs+2AZpPtMNthGQEuQrQn0GwWhGhtMgI8gmgNEgIch2iPbQ4w9VYknl9CgF1g4rdgOwOkYwCibZUQoASiDSHDzgCZ+Gr5Aij/QjgCj5NnwCEJAWqsnwHyrwFnJARoce4aADyEaM8kBOiCaEF5nwPE2wTNJhvxG6JdkRGgBma7b2OAgBs+CeYjArOdlvXal/+/ABDATGuHF9oseXEVzMKZJylABfRrhR/XoN8AzqJY9w1PkuCY+p9lwIdzGISVVckMkIyXUTcsCqChFkbrRyeyoAlk4R6+IJa9Qoq8AMAe6DeGzdDQDqO1WjjuecS6Cqe+Fb4J/V4gGem4g+htgGaO34ltt538WjwXfdCvHBrmogxNaEAJ5lg4Zja+wcr64XUuAFCMMUyvBxmzOJ7H4g2VCErccm+wDOOYXhe2IElwlTezFCGYbQJ73XZ3eCeGDW5n38B1BOCJQ4AQ/G59PmA9nsJov5Br4RhZCMNo3Shw+xMiqWgyuJCNWrxg5Rj87XecQloiPSO0ChcwrDsDsi2+BCZ03/BcwupEfkrMiyOosfg2mIQDOIrl6kFJFUAFUAFUABVABVABVAAVQAVQAezwB0WFfpUw1et7AAAAAElFTkSuQmCC);
+}
+
+.si-google {
+background-color: #d14836;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADEklEQVR42u3aS0hUURzHcV9RM5lZWApJi6Cg1KK016JUigrajItA6LlxV5JKUYYm9qCFQpCLMKI20qKwF2FtBMEcN2ESKSgRWU6WmpWFpaZ9L9zFn4tX74wi98ycH3xW95xzuT/0zvGMUZOTkxFNF6AL0AXoAnQBugBdgC5AF6AL0AXoAnQBc2wBvA4sRWKQa8a4tYD1qIQfAfShBx+EXgyYBvEK2Q7XL0QPtrmtgGTUwkg/6vEAPbDmKxrhx2NkBHGfChAKc1EBmXgHI7eQIK55UYS/ooBBFIR4rzIY2eWWAtbhC4w0TzPOh3HI5KleQCyagnigSsh0w6NyAQfEw4wgdYbx8fgEmT1B3vO8OW+7Gwq4aXmxJTiYUw2ZC1OM8SDDRo0574TN9Q2Im68CXogH+Y4kB3MOQqZmijFZCDXjWDlfBTyFzGYHczIgUzXFmFRct+E35923uX4V8fNVQBVkShxulGTyg7znGXPeFje8A3Ih89bB71+OGN+HRNU/Bl9C5vQMcy6LscfDYSO0ET/FQ/3BPpuxKeg3x11TfSco5aLXsic4hXjLjrHFvF6EKNULsErFDXwWRfTjEZ5jGEYOz/I+l2Akx00FSMuRjWMoxpgopGEO1k9DPlaocCCSjglRwL1IOxHKg8wv7IikAtZgFDIBZEbSoWg5rBlCfrgVEIudKMVDtMCPVtjlSjgUEIsCtMPIGJ6gGD7shw8VNueDF1UuYK3lRKgaq6YZn4I6WLNVxQLSxOnOKA4FMfck/okC7qpWwBJ0iAc4F8IahWJ+F+JUKuCsZbubEMIaMegSnwpJqhQQg9eigNZZ3LweRoaRokoBy/BNFNCJ6FkeqX2ER5UCvAhYDiE3hfjF6XsYqVPtJXgHMs9CWOOoOXcCmaoVsBq9kKkN4sd4L36ITxAlN0LpaINMG44g2ebdkY3bYnyp6lthL0rQCZkRvEETmtGB3+J6I3aH0x9Di5CDctSjHQEMYQDdaEAZsiLlPGAhFsODaP1PUroAXYAuQBegC9AF6AJ0AboAXYAuQBegC3CX/5p0BWI/RowIAAAAAElFTkSuQmCC);
+}
 
 
 /* Navigation */
@@ -75,12 +114,20 @@ a:visited {
 	width:100%;
 	height:auto;
 	position: relative;
-	padding:140px 0;
+	padding:100px 0;
+}
+
+.slide h1 {
+	margin: .5em 0 1.5em 0;
+}
+
+.slide h2 {
+	margin: 2em 0 .5em 0;
 }
 
 
 
-/* Slide 1 */ 
+/* Slide 1 - CV */
 
 #slide1{
 	background-color:#ffffff;
@@ -103,10 +150,10 @@ a:visited {
 
 
 
-/* Slide 2 */ 
+/* Slide 2 - Publications*/
 
 #slide2{
-	background-image:url('../images/footprints.png');
+	background-image:url('../images/papers.png');
 	background-color:#f68f67;
 	color:#ffffff;
 }
@@ -128,7 +175,7 @@ a:visited {
 
 
 
-/* Slide 3 */ 
+/* Slide 3 - Research*/
 
 #slide3{
 	background-color:#ffffff;
@@ -158,10 +205,10 @@ a:visited {
 
 
 
-/* Slide 4 */
+/* Slide 4 - Hobbies*/
 
 #slide4{
-	background-image:url('../images/sunglasses.png');
+	background-image:url('../images/music.png');
 	background-color:#8a8683;
 	color:#ffffff;
 }
@@ -181,7 +228,7 @@ a:visited {
 }
 
 
-/* Slide 5 */
+/* Slide 5 - Contact*/
 
 #slide5{
     background-color:#ffffff;
@@ -201,23 +248,21 @@ a:visited {
     font-weight: 400;
 }
 
-/* Slide 6 */
+/* Slide 6 - Credits */
 
 #slide6{
-    background-image:url('../images/sunglasses.png');
-    background-color:#8a8683;
-    color:#ffffff;
+    padding: 4em 0;
+    background-color:#1a1a1a;
+    color:#fff;
+    font-size: .8em;
 }
 #slide6 h1 {
-    font-size: 3.8em;
-    letter-spacing: -3px;
+    font-size: 1.5em;
     line-height: 0px;
-    color:#ffffff;
     font-weight: 700;
 }
 #slide6 h2 {
     font-size: 2em;
-    color: #ffffff;
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
