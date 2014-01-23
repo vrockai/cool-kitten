@@ -8,18 +8,20 @@ body {
 	background-color:#ffffff;
 }
 img {
-	max-width: 100%;
+	/*max-width: 100%;*/
 }
 a:link {
 	color: #f68f67;
 	text-decoration: none;
 }
-a:hover {
-	color: #bde2df;
-	text-decoration: none;
-}
+
 a:visited {
 	color: #f68f67;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f65f37;
 	text-decoration: none;
 }
 
@@ -95,12 +97,12 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 }
 .navigation li:hover{
 	cursor:pointer;
-	color: #a9d3d0;
+	color: #f65f37;
 }
 
 .navigation .active{
 	cursor:pointer;
-	color: #f68f67;
+	color: #fc3700;
 	font-weight:bold;
 }
 
@@ -148,13 +150,11 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 }
 
 
-
-
 /* Slide 2 - Publications*/
 
 #slide2{
 	background-image:url('../images/papers.png');
-	background-color:#f68f67;
+	background-color:#14332B;
 	color:#ffffff;
 }
 #slide2 h1 {
@@ -209,7 +209,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 
 #slide4{
 	background-image:url('../images/music.png');
-	background-color:#8a8683;
+	background-color:#142233;
 	color:#ffffff;
 }
 #slide4 h1 {
@@ -227,6 +227,12 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 	font-weight: 400;
 }
 
+#what {
+	text-align:center;
+}
+#what > p:nth-child(2) > a {
+	font-size: 1.5em;
+}
 
 /* Slide 5 - Contact*/
 
@@ -242,7 +248,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 }
 #slide5 h2 {
     font-size: 2em;
-    color: #8a8683;
+    color: #0B1519;
     line-height: 0px;
     padding-bottom:20px;
     font-weight: 400;
@@ -252,7 +258,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 
 #slide6{
     padding: 4em 0;
-    background-color:#1a1a1a;
+    background-color:#0B1519;
     color:#fff;
     font-size: .8em;
 }
