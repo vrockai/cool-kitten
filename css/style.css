@@ -316,7 +316,6 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 }
 
 #content {
-	text-align:center;
 	width:100%;
 }
 
@@ -343,6 +342,10 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYA
 }
 #slide4 h2 {
 	line-height: 1em;
+}
+
+#photo {
+display: none;
 }
 
 }
