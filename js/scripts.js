@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
     htmlbody = $('html,body');
 
 
-    slide.waypoint(function (event, direction) {
+    slide.waypoint(function (direction) {
 
         dataslide = $(this).attr('data-slide');
 
