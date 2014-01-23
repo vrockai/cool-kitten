@@ -10,11 +10,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-	<link rel="stylesheet/less" href="css/style.less" type="text/css" media="screen">
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" media="screen">
     <link rel="icon" type="image/png" href="images/favicon.png" />
 	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
 	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="js/less.js"></script>
+    <style>
+        img.hobbyPic2 {
+            clip-path: url(#clippingCss);
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +28,7 @@
 		<div class="container clearfix">
 
 			<div id="logo" class="grid_3">
-				<img src="images/logo_small.png"/>
+                Viliam Ročkai
 			</div>
 
 			<div id="nav" class="grid_9 omega">
@@ -43,7 +48,7 @@
 	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-            <div id="content" class="grid_8">
+            <div class="content grid_8">
                 <h1>Curriculum Vitae</h1>
 
                 <h2>Personal information:</h2>
@@ -119,7 +124,7 @@
             </div>
 
             <div id="photo" class="grid_4 omega">
-                <img src="images/vrockai.png"/>
+                <img src="images/vrockai.png" alt="Photo"/>
             </div>
 
 		</div>
@@ -128,7 +133,7 @@
 	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
+			<div class="content grid_12">
 				<h1>Publications</h1>
 
                 <h2>2013</h2>
@@ -188,7 +193,7 @@
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
+			<div class="content grid_12">
 				<h1>Research</h1>
                 <h2>Beast SVN access</h2>
                 <p>
@@ -207,29 +212,38 @@
                     In case of any problems/comments/feature requests please feel free to e-mail me on viliam.rockai(at)gmail.com.
                 </p>
                 <br/>
-                <span class="deprecated">
-                <h2>Beast - software used in experiments (deprecated)</h2>
-                <p>
-                    Actual version of beast is available in svn repository. Please use the version below only if you have problems with running the SVN version. Jar archives below can be very old and missing some important functionality.
-                    <a href='beast/aloc.rar'>Beast - source files</a><br/>
-                    <a href='beast/alocbin.rar'>Beast - jar binary + used libraries</a><br/>
-                    <br/>
+                <div class="deprecated">
+                    <h2>Beast - software used in experiments (deprecated)</h2>
+                    <p>
+                        Actual version of beast is available in svn repository. Please use the version below only if you
+                        have problems with running the SVN version. Jar archives below can be very old and missing some
+                        important functionality.
+                        <a href='beast/aloc.rar'>Beast - source files</a><br/>
+                        <a href='beast/alocbin.rar'>Beast - jar binary + used libraries</a>
+                    </p>
+
                     <h3>Usage:</h3>
-                    java -Xmx1024m -jar Beast.jar ( or -Xmx2048, depends on korpus size )<br/>
-                    <br/>
+                    <p>
+                        java -Xmx1024m -jar Beast.jar ( or -Xmx2048, depends on korpus size )<br/>
+                    </p>
+
                     <h3>Learning ( type within the interface ):</h3>
-                    -buildlex path_to_corpus/subpath_to_corpus<br/>
-                    -learn path_to_corpus/subpath_to_corpus<br/>
-                    <br/>
-                    -help<br/>
-                    <br/>
+                    <p>
+                        -buildlex path_to_corpus/subpath_to_corpus<br/>
+                        -learn path_to_corpus/subpath_to_corpus<br/>
+                        <br/>
+                        -help
+                    </p>
+
                     <h3>Useful commands:</h3>
-                    -treshold <i>value</i> : set the treshold - it is recomended to start with treshold of value about 4<br/>
-                    -find <i>token</i> : search in lexicon for token<br/>
-                    -synonyms <i>token</i> : computes synonyms for token<br/>
-                    -relate <i>token1</i>,<i>token2</i> : compute relatedness of token pair<br/>
-                </p>
-                </span>
+                    <p>
+                        -treshold <i>value</i> : set the treshold - it is recomended to start with treshold of value
+                        about 4<br/>
+                        -find <i>token</i> : search in lexicon for token<br/>
+                        -synonyms <i>token</i> : computes synonyms for token<br/>
+                        -relate <i>token1</i>,<i>token2</i> : compute relatedness of token pair
+                    </p>
+                </div>
 			</div>
 
 		</div>
@@ -238,29 +252,45 @@
     <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
 
-            <div id="content" class="grid_12">
+            <svg>
+                <defs>
+                    <clipPath id="clippingLess">
+                        <circle cx="125" cy="125" r="125" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <svg>
+                <defs>
+                    <clipPath id="clippingCss">
+                        <circle cx="125" cy="125" r="125" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <div class="content grid_12">
                 <h1>Hobbies</h1>
                 <!--h2>Music</h2-->
-                <div id="what" class="grid_4">
-                    <p><a href='http://bandzone.cz/marcelzrelictrio'><img src="images/m_zrelic.jpg"></a></p>
+                <div class="grid_4 hobby">
+                    <p><a href='http://bandzone.cz/marcelzrelictrio'><img class="hobbyPic" src="images/m_zrelic.jpg" alt="MZT"></a></p>
                     <p><a href='http://bandzone.cz/marcelzrelictrio'>Marcel Zrelič Trio</a></p>
                     <p>Jazz trio playing mostly our own tunes.</p>
                 </div>
-                <div id="what" class="grid_4">
-                    <p><a href='http://bandzone.cz/sushibar'><img src="images/m_sushi.jpg"></a></p>
+                <div class="grid_4 hobby">
+                    <p><a href='http://bandzone.cz/sushibar'><img class="hobbyPic2" src="images/m_sushi.jpg" alt="Sushi bar"></a></p>
                     <p><a href='http://bandzone.cz/sushibar'>Sushi Bar</a></p>
-                    <p>Solo IDM music project.</p>
+                    <p>Solo IDM class="hobbyPic"music project.</p>
                 </div>
-                <div id="what" class="grid_4 omega">
-                    <p><a href='http://bandzone.cz/balkai'><img src="images/m_balkai.jpg"></a></p>
+                <div class="grid_4 omega hobby">
+                    <p><a href='http://bandzone.cz/balkai'><img class="hobbyPic" src="images/m_balkai.jpg" alt="Balkai"></a></p>
                     <p><a href='http://bandzone.cz/balkai'>Balkai</a></p>
-                    <p>Another IDM project together with <a href="https://soundcloud.com/pidi-sex">Mr. Pidi Sex</a>.</p>
+                    <p>Another IDM project together with <a href="https://soundcloud.com/pidi-sex">Mr.&nbsp;Pidi&nbsp;Sex</a>.</p>
                 </div>
                 <p></p>
                 <!--h2>Graphics</h2-->
-                <div id="what" class="grid_4">
-                    <p><a href='https://www.facebook.com/viliam.rockai/media_set?set=a.1053477450662.2009659.1037574602&type=3'><img src="images/g_basa.png"></a></p>
-                    <p><a href='https://www.facebook.com/viliam.rockai/media_set?set=a.1053477450662.2009659.1037574602&type=3'>Drawings gallery</a></p>
+                <div class="grid_4 hobby">
+                    <p><a href="https://www.facebook.com/viliam.rockai/media_set?set=a.1053477450662.2009659.1037574602&amp;type=3"><img class="hobbyPic2"src="images/g_basa.png" alt="Drawing"></a></p>
+                    <p><a href="https://www.facebook.com/viliam.rockai/media_set?set=a.1053477450662.2009659.1037574602&amp;type=3">Drawings gallery</a></p>
                     <p>Collection of my drawings, mostly strips.</p>
                 </div>
                 <p></p>
@@ -272,7 +302,7 @@
 	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
+			<div class="content grid_12">
 				<h1>Contact</h1>
 				<p>You can reach me at viliam.rockai(at)gmail.com</p>
 				<p>You can follow me here:</p>
@@ -289,7 +319,7 @@
     <div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
         <div class="container clearfix">
 
-            <div id="content" class="grid_12">
+            <div class="content grid_12">
                 <h1>Credits</h1>
                 <p>This personal page was made using the template of <a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a> made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.
                     Social icons used on this page are from the <a href="http://simpleicons.org/">Simple icons</a> project. You can grab the sources of this page from my github repo <a href="https://github.com/vrockai/vrockai-homepage">vrockai-homepage</a>
