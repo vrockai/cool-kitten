@@ -21,13 +21,11 @@ gulp.task('index', ['less'], function () {
   return gulp.src('./src/index.html')
     .pipe(wiredep())
     .pipe(inject(jsInjector, {
-      ignorePath: 'dist',
+      ignorePath: 'docs',
       addRootSlash: false,
       addPrefix: '..'
     }))
     .pipe(inject(cssInjector, {
-      //name: 'pipik',
-      //ignorePath: 'dist',
       addRootSlash: false,
       addPrefix: '..'
     }))
@@ -38,13 +36,13 @@ gulp.task('index', ['less'], function () {
       js: []
     }))
 
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('minify', ['index'], function () {
-  return gulp.src('./dist/index.html')
+  return gulp.src('./docs/index.html')
     .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('less', ['lessBower', 'lessPaff']);
@@ -70,20 +68,20 @@ gulp.task('lessPaff', function () {
 gulp.task('fonts', function () {
   return gulp.src([
     'bower_components/font-awesome/fonts/fontawesome-webfont.*'])
-    .pipe(gulp.dest('dist/fonts/'));
+    .pipe(gulp.dest('docs/fonts/'));
 });
 
 gulp.task('images', function () {
   return gulp.src('./src/img/**/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('docs/img'));
 });
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['less', 'images', 'fonts', 'index'], function () {
 
   browserSync.init({
-    server: "./dist"
+    server: "./docs"
   });
 
   gulp.watch(['src/index.html'], ['html-watch']);
