@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 var imagemin = require('gulp-imagemin');
 var less = require('gulp-less');
 var lib = require('bower-files')();
@@ -101,3 +102,7 @@ gulp.task('js-watch', ['index'], browserSync.reload);
 gulp.task('default', ['serve']);
 gulp.task('build', ['less', 'images', 'fonts', 'minify']);
 
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('./docs/**/*')
+    .pipe(ghPages());
+});
