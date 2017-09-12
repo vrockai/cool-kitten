@@ -104,5 +104,7 @@ gulp.task('build', ['less', 'images', 'fonts', 'minify']);
 
 gulp.task('deploy', ['build'], function() {
   return gulp.src('./docs/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      branch: 'master'
+    }));
 });
