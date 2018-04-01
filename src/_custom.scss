@@ -1,0 +1,25 @@
+@import "base16";
+/*
+$primary: red;
+$secondary: green;
+$danger: magenta;
+*/
+
+$primary: $base08;
+$secondary: $base03;
+$info: $base0A;
+
+$body-bg: $base07;
+$body-color: $base01;
+
+$white: $base07;
+$dark: $base01;
+
+$font-family-base: 'Karma', serif;
+//$font-family-base: 'IBM Plex Serif', serif;
+$font-size-base: 1.25rem;
+$h2-font-size: 5rem;
+
+$link-decoration: underline;
+
+// @import "~bootstrap/scss/bootstrap.scss";

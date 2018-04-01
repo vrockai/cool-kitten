@@ -1,0 +1,214 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+
+body {
+
+}
+/*
+.card {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.card img {
+    border: 1em solid $white !important;
+}
+
+.card p {
+
+}
+
+a > .card-img-top {
+    transition: 1s ease-in-out;
+}
+
+a > .card-img-top:hover {
+    transform: scale(1.05);
+    filter: sepia(10%);
+}
+*/
+
+.badge {
+    padding: 0.35em 0.4em 0.1em 0.5em
+}
+
+.vr-company > .container > .row {
+    margin-top: 4rem;
+    .vr-company-logo {
+        vertical-align: top;
+        img {
+            width: 75%;
+        }
+    }
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.preurl {
+    margin-bottom: 0;
+}
+
+section {
+    h2 {
+        // margin: 6rem 0 4rem 0;
+        margin: 3rem 0 0 0;
+    }
+
+    .container.vr-content {
+        //padding: 2rem 0;
+        padding: 2rem 0 4rem 0;
+    }
+}
+
+$divider-width: 4rem;
+.divider {
+    height: $divider-width;
+    text-align: center;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: $divider-width;
+        height: $divider-width;
+        border-right: $divider-width solid transparent;
+        border-bottom: $divider-width solid transparent;
+        border-left: $divider-width solid transparent;
+    }
+
+    &.divider-white:after {
+        border-top: $divider-width solid $body-bg;
+    }
+
+    &.divider-dark:after {
+        border-top: $divider-width solid $dark;
+    }
+}
+
+$company-border: 2rem;
+
+.vr-position {
+    margin-bottom: 4rem;
+}
+
+.vr-company {
+    padding-bottom: 8rem;
+}
+
+.vr-company:last-child {
+    border-bottom: $company-border solid transparent;
+}
+
+.vr-company-dnastack {
+    // TODO: move to first-child
+    border-top: $company-border solid transparent;
+    border-left: $company-border solid #1c84ca;
+}
+
+.vr-company-redhat {
+    border-left: $company-border solid #cb2026;
+}
+
+.vr-company-siemens {
+    border-left: $company-border solid #009999;
+}
+
+.vr-company-acision {
+    border-left: $company-border solid #fae12d;
+
+}
+
+.hobby {
+    text-align: center;
+}
+
+
+#bookmark {
+    position: fixed;
+    width: 10rem;
+    top: 2rem;
+    left: 2rem;
+
+    img {
+        width: 10rem;
+    }
+}
+
+#vrockai-publications {
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+}
+
+#vrockai-info {
+
+}
+
+/* Social icons */
+
+a.icon {
+
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;
+    width: 64px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+
+    i {
+        color: white;
+        line-height: 4rem;
+    }
+
+    &.icon-linkedin {
+        background-color: #007FB1;
+    }
+
+    &.icon-google {
+        background-color: #d14836;
+    }
+
+    &.icon-github {
+        background-color: #4183c4;
+    }
+
+    &.icon-twitter {
+        background-color: #1DA1F2;
+    }
+}
+
+.bg-darker {
+    background-color: $base00;
+}
+
+.card-columns {
+    margin-top: 2rem;
+}
+
+.card {
+    min-height: 25rem;
+}
+.card-img-overlay {
+    opacity: 0;
+    transition: 250ms;
+
+    font-size: 1rem;
+
+    &:hover {
+        color: $white;
+        background-color: $dark;
+        opacity: 0.95;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
