@@ -193,7 +193,11 @@ a.icon {
 
 .card {
     background-color: $base07;
-    min-height: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    img {
+        // max-height: 20rem;
+    }
 }
 .card-img-overlay {
     opacity: 0;
