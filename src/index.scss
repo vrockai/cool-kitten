@@ -102,26 +102,60 @@ $company-border: 2rem;
 .vr-company:last-child {
     border-bottom: $company-border solid transparent;
 }
-
 .vr-company-dnastack {
-    // TODO: move to first-child
-    border-top: $company-border solid transparent;
-    border-left: $company-border solid #1c84ca;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-top: $company-border solid transparent;
+        border-left: $company-border solid #1c84ca;
+    }
 }
 
 .vr-company-redhat {
-    border-left: $company-border solid #cb2026;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-left: $company-border solid #cb2026;
+    }
 }
 
 .vr-company-acision {
-    border-left: $company-border solid #fae12d;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-left: $company-border solid #fae12d;
+    }
 }
 
 .vr-company-siemens {
-    border-left: $company-border solid #009999;
-    border-bottom: $company-border solid transparent;
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-left: $company-border solid #009999;
+        border-bottom: $company-border solid transparent;
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .hobby {

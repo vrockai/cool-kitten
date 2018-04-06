@@ -38,7 +38,7 @@
 
         <!-- Experience -->
         <experienceSection></experienceSection>
-        <sectionDivider class="divider-white"></sectionDivider>
+        <sectionDivider class="bg-dark divider-white"></sectionDivider>
 
         <!-- Education -->
         <educationSection></educationSection>
@@ -46,7 +46,7 @@
 
         <!-- Publications -->
         <publicationsSection></publicationsSection>
-        <sectionDivider class="divider-white"></sectionDivider>
+        <sectionDivider class="bg-dark divider-white"></sectionDivider>
 
         <!-- Hobbies -->
         <hobbiesSection></hobbiesSection>
@@ -59,11 +59,7 @@
 
 <script>
     import AboutSection from './section/AboutSection.vue';
-    import BadgeList from './BadgeList.vue';
-    import Company from './Company.vue';
-    import VrSection from './VrSection.vue';
     import SectionDivider from './SectionDivider.vue';
-    import Card from './Card';
     import HobbiesSection from './section/HobbiesSection.vue';
     import ExperienceSection from "./section/ExperienceSection.vue";
     import EducationSection from "./section/EducationSection.vue";
@@ -79,11 +75,7 @@
             ExperienceSection,
             HobbiesSection,
             AboutSection,
-            BadgeList,
-            Company,
-            VrSection,
             SectionDivider,
-            Card
         },
     }
 </script>
