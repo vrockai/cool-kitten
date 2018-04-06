@@ -45,6 +45,22 @@ module.exports = {
         }, {
           loader: 'sass-loader' // compiles Sass to CSS
         }]
+      },  {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            js: 'babel-loader'
+          }
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: [{
+          loader: "babel-loader",
+          options: { presets: ['es2015'] }
+        }]
       }, {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
@@ -62,5 +78,11 @@ module.exports = {
         }]
       }
     ]
-  }
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    },
+    extensions: ['*', '.js', '.vue', '.json']
+  },
 };

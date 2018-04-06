@@ -35,7 +35,7 @@ a > .card-img-top:hover {
     padding: 0.35em 0.4em 0.1em 0.5em
 }
 
-.vr-company > .container > .row {
+.vr-company .row > .container > .row {
     margin-top: 4rem;
     .vr-company-logo {
         vertical-align: top;
@@ -96,7 +96,7 @@ $company-border: 2rem;
 }
 
 .vr-company {
-    padding-bottom: 8rem;
+
 }
 
 .vr-company:last-child {
@@ -113,13 +113,15 @@ $company-border: 2rem;
     border-left: $company-border solid #cb2026;
 }
 
-.vr-company-siemens {
-    border-left: $company-border solid #009999;
-}
-
 .vr-company-acision {
     border-left: $company-border solid #fae12d;
+}
 
+.vr-company-siemens {
+    border-left: $company-border solid #009999;
+    border-bottom: $company-border solid transparent;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 .hobby {
