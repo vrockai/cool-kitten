@@ -6,116 +6,70 @@
             </template>
         </vr-section>
 
-        <vr-section class="vr-company vr-company-dnastack">
-            <template slot="body">
-                <company>
-                    <template slot="info">
-                        <h4>2015 - </h4>
-                        <h3>Senior Front-End Engineer</h3>
+        <company logoUrl="img/logo/dnastack.png"
+                 :projects="experience[0].portfolio"
+                 class="vr-company-dnastack">
+            <h4>2015 - </h4>
+            <h3>Senior Front-End Engineer</h3>
 
-                        Responsible for the front-end development, deployment and QA. Building complex SPAs in domain of
-                        genomics. Automating the BE and FE deployment with Bash scripts. Jenkins installation,
-                        administration and maintenance.
+            Responsible for the front-end development, deployment and QA. Building complex SPAs in domain of genomics.
+            Automating the BE and FE deployment with Bash scripts. Jenkins installation, administration and maintenance.
 
-                        <badge-list :badges="['Angular', 'AngularJS', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS',
-                    'Wordpress', 'Webpack', 'Jenkins', 'Cypress.io',  'Docker', 'Keycloak', 'MySQL']"></badge-List>
-                    </template>
-                    <template slot="logo">
-                        <img src="img/logo/dnastack.png">
-                    </template>
-                </company>
+            <badge-list
+                :badges="['Angular', 'AngularJS', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS', 'Wordpress', 'Webpack',
+                'Jenkins', 'Cypress.io',  'Docker', 'Keycloak', 'MySQL']"></badge-List>
+        </company>
 
-                <div class="card-columns">
-                    <card v-for="project in experience[0].portfolio" :project="project"></card>
-                </div>
-            </template>
-        </vr-section>
+        <company logoUrl="img/logo/redhat.png"
+                 :projects="experience[1].portfolio"
+                 class="vr-company-redhat">
+            <h4>2012 - 2015</h4>
+            <h3>Senior Front-End Engineer</h3>
 
-        <vr-section class="vr-company vr-company-redhat">
-            <template slot="body">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="vr-position">
-                            <h4>2012 - 2015</h4>
-                            <h3>Senior Front-End Engineer</h3>
+            <p>
+                Responsible for both the FE (AngularJS) and BE (J2EE) development on several Redhat projects using
+                mostly Redhat technologies.
+            </p>
 
-                            <p>
-                                Responsible for both the FE (AngularJS) and BE (J2EE) development on several Redhat
-                                projects
-                                using mostly Redhat technologies.
-                            </p>
+            <badge-list :badges="['AngularJS', 'JSF', 'RichFaces', 'J2EE', 'JBoss AS', 'Wildfly']"></badge-List>
 
-                            <badge-list :badges="['AngularJS', 'JSF', 'RichFaces', 'J2EE', 'JBoss AS',
-                            'Wildfly']"></badge-List>
-                        </div>
+            <span class="mt-4">&nbsp;</span>
 
-                        <div class="vr-position">
-                            <h4>2008 - 2012</h4>
-                            <h3>QA Engineer</h3>
-                            <p>
-                                Responsible for the QA (automated UI and performance testing) of the JBoss Portal
-                                project
-                                (later GateIn) and related projects. Covered the whole JBoss Portal project with UI
-                                tests
-                                (Selenium). Improved the performance of the Picketlink project by tweaking Hibernate
-                                settings as a part of performance QA.
-                            </p>
-                            <badge-list :badges="['Jenkins', 'J2EE']"></badge-List>
-                        </div>
-                    </div>
-                    <div class="col-4 vr-company-logo">
-                        <img src="img/logo/redhat.png">
-                    </div>
-                </div>
+            <h4 class="mt-4">2008 - 2012</h4>
+            <h3>QA Engineer</h3>
+            <p>
+                Responsible for the QA (automated UI and performance testing) of the JBoss Portal project (later GateIn)
+                and related projects. Covered the whole JBoss Portal project with UI tests (Selenium). Improved the
+                performance of the Picketlink project by tweaking Hibernate settings as a part of performance QA.
+            </p>
+            <badge-list :badges="['Jenkins', 'J2EE']"></badge-List>
+        </company>
 
-                <div class="card-columns">
-                    <card v-for="project in experience[1].portfolio" :project="project"></card>
-                </div>
-            </template>
-        </vr-section>
+        <company logoUrl="img/logo/acision.png"
+                 class="vr-company-acision">
+            <h4>2006 - 2008</h4>
+            <h3>Software Engineer</h3>
 
-        <vr-section class="vr-company vr-company-acision">
-            <template slot="body">
-                <company>
-                    <template slot="info">
-                        <h4>2006 - 2008</h4>
-                        <h3>Software Engineer</h3>
+            <p>
+                Junior BE developer working on an in-house projects based on JBoss Portal. First experience with agile
+                (pair) programming and test driven development.
+            </p>
 
-                        <p>
-                            Junior BE developer working on an in-house projects based on JBoss Portal. First experience
-                            with agile (pair) programming and test driven development.
-                        </p>
+            <badge-list :badges="['J2EE', 'JBoss AS']"></badge-List>
+        </company>
 
-                        <badge-list :badges="['J2EE', 'JBoss AS']"></badge-List>
-                    </template>
-                    <template slot="logo">
-                        <img src="img/logo/acision.png">
-                    </template>
-                </company>
-            </template>
-        </vr-section>
+        <company logoUrl="img/logo/siemens.png"
+                 class="vr-company-siemens">
+            <h4>2005 - 2006</h4>
+            <h3>Software Engineer</h3>
 
-        <vr-section class="vr-company vr-company-siemens">
-            <template slot="body">
-                <company>
-                    <template slot="info">
-                        <h4>2005 - 2006</h4>
-                        <h3>Software Engineer</h3>
+            <p>
+                Software engineer responsible for development and maintenance of an Eigner-PLM product. The product was
+                a very custom piece of technology (similar to SAP) highly reliable on an Oracle DB.
+            </p>
 
-                        <p>
-                            Software engineer responsible for development and maintenance of an Eigner-PLM product. The
-                            product was a very custom piece of technology (similar to SAP) highly reliable on an Oracle
-                            DB.
-                        </p>
-
-                        <badge-list :badges="['Bash', 'Oracle']"></badge-List>
-                    </template>
-                    <template slot="logo">
-                        <img src="img/logo/siemens.png">
-                    </template>
-                </company>
-            </template>
-        </vr-section>
+            <badge-list :badges="['Bash', 'Oracle']"></badge-List>
+        </company>
     </div>
 </template>
 
@@ -126,7 +80,6 @@
     import VrSection from '../VrSection.vue';
     import Card from '../Card';
     import ExperienceSection from "./ExperienceSection";
-
 
     export default {
         components: {ExperienceSection, AboutSection, BadgeList, Company, VrSection, Card},
