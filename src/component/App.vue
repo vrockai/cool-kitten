@@ -86,7 +86,6 @@
     import PublicationsSection from "./section/PublicationsSection.vue";
 
     export default {
-        name: 'app',
         components: {
             EducationSection,
             ContactSection,

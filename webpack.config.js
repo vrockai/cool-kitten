@@ -3,7 +3,6 @@ const precss = require('precss');
 const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -13,10 +12,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      favicon: './src/favicon.png'
-    }),
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       {from: '*.html', to: './'},
@@ -50,7 +45,7 @@ module.exports = {
         }, {
           loader: 'sass-loader' // compiles Sass to CSS
         }]
-      },  {
+      }, {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -58,13 +53,12 @@ module.exports = {
             js: 'babel-loader'
           }
         }
-      },
-      {
+      }, {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: [{
           loader: "babel-loader",
-          options: { presets: ['es2015'] }
+          options: {presets: ['es2015']}
         }]
       }, {
         test: /\.(png|svg|jpg|gif)$/,
@@ -72,17 +66,11 @@ module.exports = {
           'file-loader'
         ]
       }, {
-        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',    // where the fonts will go
-            publicPath: '../'       // override the default path
-          }
-        }]
-      }
-    ]
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      }, {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"
+      }]
   },
   resolve: {
     alias: {
