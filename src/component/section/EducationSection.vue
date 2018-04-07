@@ -1,7 +1,7 @@
 <template>
     <vr-section id="education" section-class="bg-dark text-white">
         <template slot="header">
-            <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+            <h2><i class="fa fa-graduation-cap d-none d-md-inline"></i> Education</h2>
         </template>
         <template slot="body">
             <div class="row">

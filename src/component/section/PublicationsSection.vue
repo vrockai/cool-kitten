@@ -1,11 +1,11 @@
 <template>
     <vr-section id="publications">
         <template slot="header">
-            <h2><i class="fa fa-file"></i> Publications</h2>
+            <h2><i class="fa fa-file d-none d-md-inline"></i> Publications</h2>
         </template>
         <template slot="body">
             <div class="row">
-                <div class="col-6" v-for="column in publications">
+                <div class="col-12 col-md-6" v-for="column in publications">
                     <ul>
                         <li v-for="year in column" v-key="year.year" class="mt-4 mb-2">
                             <h4>{{year.year}}</h4>

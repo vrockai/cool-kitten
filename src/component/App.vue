@@ -1,7 +1,7 @@
 <template>
     <div>
         <div id="navigation" class="container-fluid bg-darker">
-            <div class="row">
+
                 <div class="container vr-content">
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">Dr. Viliam Ročkai, PhD.</a>
@@ -34,7 +34,6 @@
                         </div>
                     </nav>
                 </div>
-            </div>
         </div>
 
         <!-- About -->

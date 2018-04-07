@@ -16,8 +16,8 @@ p {
     padding: 0.35em 0.4em 0.1em 0.5em
 }
 
-.vr-company .row > .container > .row {
-    margin-top: 4rem;
+.vr-company {
+    //margin-top: 4rem;
     .vr-company-logo {
         vertical-align: top;
         img {
@@ -67,6 +67,7 @@ $divider-width: 4rem;
 }
 
 $company-border: 2rem;
+$company-border-sm: 0.25rem;
 
 .vr-position {
     margin-bottom: 4rem;
@@ -134,6 +135,8 @@ $company-border: 2rem;
         margin-bottom: 4rem;
     }
 }
+
+
 
 .hobby {
     text-align: center;
@@ -237,4 +240,38 @@ a.icon {
 
 footer {
     font-size: 1rem;
+}
+
+@include media-breakpoint-down(md) {
+    .vr-company {
+        padding-top: 2rem;
+    }
+
+    .vr-company-dnastack:after, .vr-company-redhat:after, .vr-company-acision:after, .vr-company-siemens:after {
+        border-width: $company-border-sm;
+    }
+
+    section .container.vr-content {
+        padding: 0.1rem 0.1rem;
+    }
+
+    section h2 {
+        margin-top: 2rem;
+        margin-left: 0;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .card-img-overlay {
+        color: $white;
+        background-color: $dark;
+        opacity: 0.95;
+    }
 }

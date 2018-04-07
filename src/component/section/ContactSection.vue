@@ -1,7 +1,7 @@
 <template>
     <vr-section id="contact">
         <template slot="header">
-            <h2><i class="fa fa-phone-square"></i> Contact</h2>
+            <h2><i class="fa fa-phone-square d-none d-md-inline"></i> Contact</h2>
         </template>
         <template slot="body">
             <div class="row">

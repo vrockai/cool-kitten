@@ -2,7 +2,7 @@
     <div>
         <vr-section id="experience">
             <template slot="header">
-                <h2><i class="fa fa-code"></i> Experience</h2>
+                <h2><i class="fa fa-code d-none d-md-inline d-none d-md-inline"></i> Experience</h2>
             </template>
         </vr-section>
 
@@ -10,6 +10,7 @@
                  :projects="experience[0].portfolio"
                  class="vr-company-dnastack">
             <h4>2015 - </h4>
+            <h3 class="d-inline d-md-none">DNAstack</h3>
             <h3>Senior Front-End Engineer</h3>
 
             <p>
@@ -24,6 +25,7 @@
                  :projects="experience[1].portfolio"
                  class="vr-company-redhat">
             <h4>2012 - 2015</h4>
+            <h3 class="d-inline d-md-none">Redhat</h3>
             <h3>Senior Front-End Engineer</h3>
 
             <p>
@@ -35,6 +37,7 @@
             <span class="mt-4">&nbsp;</span>
 
             <h4 class="mt-4" id="qaexperience">2008 - 2012</h4>
+            <h3 class="d-inline d-md-none">Redhat</h3>
             <h3>QA Engineer</h3>
             <p>
                 QA (automated UI and performance testing) of the JBoss Portal project (later GateIn) and related
@@ -47,6 +50,7 @@
         <company logoUrl="img/logo/acision.png"
                  class="vr-company-acision">
             <h4>2006 - 2008</h4>
+            <h3 class="d-inline d-md-none">Acision</h3>
             <h3>Software Engineer</h3>
 
             <p>
@@ -60,6 +64,7 @@
         <company logoUrl="img/logo/siemens.png"
                  class="vr-company-siemens">
             <h4>2005 - 2006</h4>
+            <h3 class="d-inline d-md-none">Siemens</h3>
             <h3>Software Engineer</h3>
 
             <p>
@@ -76,7 +81,7 @@
     import _ from 'lodash';
     import AboutSection from './AboutSection.vue';
     import BadgeList from '../BadgeList.vue';
-    import Company from '../Company.vue';
+    import Company from '../section/CompanySection.vue';
     import VrSection from '../VrSection.vue';
     import Card from '../Card';
     import ExperienceSection from "./ExperienceSection";

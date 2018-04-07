@@ -1,7 +1,7 @@
 <template>
     <vr-section id="hobbies" section-class="bg-dark text-white">
         <template slot="header">
-            <h2><i class="fa fa-coffee"></i> Hobbies</h2>
+            <h2><i class="fa fa-coffee d-none d-md-inline"></i> Hobbies</h2>
         </template>
         <template slot="body">
             <div class="card">
