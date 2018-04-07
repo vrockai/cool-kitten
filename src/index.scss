@@ -1,0 +1,277 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~font-awesome/fonts/";
+@import "~font-awesome/scss/font-awesome";
+
+
+b {
+    font-weight: 600;
+}
+p {
+    @extend .text-justify;
+}
+
+.badge {
+    padding: 0.35em 0.4em 0.1em 0.5em
+}
+
+.vr-company {
+    //margin-top: 4rem;
+    .vr-company-logo {
+        vertical-align: top;
+        img {
+            width: 75%;
+        }
+    }
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+section {
+    h2 {
+        // margin: 6rem 0 4rem 0;
+        margin: 3rem 0 0 0;
+    }
+
+    .container.vr-content {
+        //padding: 2rem 0;
+        padding: 2rem 0 4rem 0;
+    }
+}
+
+$divider-width: 4rem;
+.divider {
+    height: $divider-width;
+    text-align: center;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: $divider-width;
+        height: $divider-width;
+        border-right: $divider-width solid transparent;
+        border-bottom: $divider-width solid transparent;
+        border-left: $divider-width solid transparent;
+    }
+
+    &.divider-white:after {
+        border-top: $divider-width solid $body-bg;
+    }
+
+    &.divider-dark:after {
+        border-top: $divider-width solid $dark;
+    }
+}
+
+$company-border: 2rem;
+$company-border-sm: 0.25rem;
+
+.vr-position {
+    margin-bottom: 4rem;
+}
+
+.vr-company {
+
+}
+
+.vr-company:last-child {
+    border-bottom: $company-border solid transparent;
+}
+.vr-company-dnastack {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-top: $company-border solid transparent;
+        border-left: $company-border solid #1c84ca;
+    }
+}
+
+.vr-company-redhat {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-left: $company-border solid #cb2026;
+    }
+}
+
+.vr-company-acision {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-left: $company-border solid #fae12d;
+    }
+}
+
+.vr-company-siemens {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-left: $company-border solid #009999;
+        border-bottom: $company-border solid transparent;
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+
+
+.hobby {
+    text-align: center;
+}
+
+
+#bookmark {
+    position: fixed;
+    width: 10rem;
+    top: 2rem;
+    left: 2rem;
+
+    img {
+        width: 10rem;
+    }
+}
+
+#vrockai-publications {
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+}
+
+#vrockai-info {
+
+}
+
+/* Social icons */
+$social-icon-size: 5rem;
+a.icon {
+
+    display: inline-block;
+    height: $social-icon-size;
+    line-height: $social-icon-size;
+    width: $social-icon-size;
+
+    text-align: center;
+    vertical-align: middle;
+
+    i {
+        color: white;
+        line-height: $social-icon-size;
+    }
+
+    &.icon-linkedin {
+        background-color: #007FB1;
+    }
+
+    &.icon-google {
+        background-color: #d14836;
+    }
+
+    &.icon-github {
+        background-color: #4183c4;
+    }
+
+    &.icon-twitter {
+        background-color: #1DA1F2;
+    }
+}
+
+.bg-darker {
+    background-color: $base00;
+}
+
+.card-columns {
+    margin-top: 2rem;
+}
+
+
+.vr-company .card {
+    background-color: $base07;
+    max-height: 20rem;
+    overflow: hidden;
+    img {
+        // max-height: 20rem;
+    }
+}
+
+.bg-dark .card {
+    background-color: $base06;
+
+}
+.card-img-overlay {
+    opacity: 0;
+    transition: 250ms;
+
+    font-size: 1rem;
+
+    &:hover {
+        color: $white;
+        background-color: $dark;
+        opacity: 0.95;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+footer {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-down(sm) {
+    .vr-company {
+        padding-top: 2rem;
+    }
+
+    .vr-company-dnastack:after, .vr-company-redhat:after, .vr-company-acision:after, .vr-company-siemens:after {
+        border-width: $company-border-sm;
+    }
+
+    section .container.vr-content {
+        padding: 0.1rem 0.1rem;
+    }
+
+    section h2 {
+        margin-top: 2rem;
+        margin-left: 0;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .card-img-overlay {
+        color: $white;
+        background-color: $dark;
+        opacity: 0.95;
+    }
+}

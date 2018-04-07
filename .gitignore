@@ -1,6 +1,7 @@
 .DS_Store
 bower_components
 docs
+dist
 js/scripts.min.js
 css/style.min.css
 .tmp

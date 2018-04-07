@@ -1,42 +1,45 @@
 {
-  "name": "vrockai-homepage",
-  "version": "0.0.0",
-  "description": "Personal homepage.",
-  "main": "server.js",
-  "dependencies": {},
-  "devDependencies": {
-    "bower-files": "^3.12.0",
-    "browser-sync": "^2.12.5",
-    "gulp": "^3.9.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-htmlmin": "^2.0.0",
-    "gulp-imagemin": "^3.0.0",
-    "gulp-inject": "^4.2.0",
-    "gulp-inject-css": "^0.3.7",
-    "gulp-less": "^3.1.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-rev": "^7.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-usemin": "^0.3.23",
-    "gulp-useref": "^3.1.2",
-    "path": "^0.12.7",
-    "wiredep": "^4.0.0"
-  },
+  "name": "vrockai-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postcss.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "webpack --config webpack.config.js --mode production",
+    "serve": "webpack-dev-server --inline --mode development --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vrockai/vrockai-homepage.git"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "copy-webpack-plugin": "^4.4.2",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
+    "precss": "^3.1.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.1"
   },
-  "keywords": [
-    "rockai",
-    "personal"
-  ],
-  "author": "Viliam Rockai",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/vrockai/vrockai-homepage/issues"
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.7",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack-2": "^1.0.0",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "popper.js": "^1.12.9",
+    "vue": "^2.5.13"
   }
 }
