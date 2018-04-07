@@ -11,7 +11,7 @@
             </div>
 
             <div class="row mt-4">
-                <div class="col-xl-4 col-lg-6 col-sm-12 mb-4"
+                <div class="col-xs-12 col-sm-6 col-xl-4 mb-4"
                      v-for="card in cards" :key="card.title">
                     <card :project="card"></card>
                 </div>
