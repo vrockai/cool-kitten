@@ -10,11 +10,13 @@
                     <img :src="logoUrl">
                 </div>
             </div>
+            <div class="d-none d-md-block">
             <div class="row mt-4">
                 <div class="col-xl-4 col-lg-6 col-sm-12 mb-4"
                      v-for="project in projects" :key="project.title">
                     <card :project="project"></card>
                 </div>
+            </div>
             </div>
         </template>
     </vr-section>
