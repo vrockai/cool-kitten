@@ -33,12 +33,12 @@
                         thumbnail: 'img/hobby/m_zrelic.jpg',
                         url: 'http://bandzone.cz/marcelzrelictrio',
                         title: 'Marcel Zrelič Trio',
-                        description: 'Jazz trio playing mostly our own tunes.'
+                        description: 'Jazz trio playing mostly our own tunes. Unfortunately, the project is disbanded.'
                     }, {
                         thumbnail: 'img/hobby/m_sushi.jpg',
                         url: 'https://soundcloud.com/blurec',
                         title: 'Sushi Bar',
-                        description: 'Solo IDM music project.'
+                        description: 'Solo IDM music project. Check out the link to get a grasp of my solo music production.'
                     }, {
                         thumbnail: 'img/hobby/g_basa.png',
                         url: 'https://www.facebook.com/viliam.rockai/media_set?set=a.1053477450662.2009659.1037574602',

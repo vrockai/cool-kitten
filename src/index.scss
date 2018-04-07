@@ -7,6 +7,9 @@ $fa-font-path: "~font-awesome/fonts";
 body {
     font-weight: 300;
 }
+p {
+    @extend .text-justify;
+}
 
 .badge {
     padding: 0.35em 0.4em 0.1em 0.5em

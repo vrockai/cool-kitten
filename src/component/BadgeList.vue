@@ -1,10 +1,10 @@
 <template>
-    <p>
+    <div>
         <template v-for="badge in sortByBadgeType(badges)">
             <span class="badge"
                   :class="badgeClass(badge)">{{badge}}</span>&#32;
         </template>
-    </p>
+    </div>
 </template>
 
 <script>
@@ -23,13 +23,13 @@
                 }
             },
             isFeBadge: function (badge) {
-                return ['Angular', 'AngularJS', 'React', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS', 'Wordpress', 'Webpack', 'JSF', 'JSP', 'RichFaces'].indexOf(badge) > -1;
+                return ['Angular', 'AngularJS', 'React', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS', 'WordPress', 'Webpack', 'JSF', 'JSP', 'RichFaces'].indexOf(badge) > -1;
             },
             isQaBadge: function (badge) {
                 return ['Jenkins', 'Cypress.io', 'Selenium'].indexOf(badge) > -1;
             },
             isBeBadge: function (badge) {
-                return ['Docker', 'Keycloak', 'MySQL', 'J2EE', 'JBoss AS', 'JBoss Portal', 'Wildfly'].indexOf(badge) > -1;
+                return ['Docker', 'Keycloak', 'MySQL', 'J2EE', 'JBoss AS', 'JBoss Portal', 'Wildfly', 'Hibernate'].indexOf(badge) > -1;
             },
             sortByBadgeType: function (badgeList) {
                 return _.sortBy(badgeList, (badge) => {

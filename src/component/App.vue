@@ -60,8 +60,8 @@
                 <div class="row p-4">
                     <div class="col text-right">
                         &copy; 2018 Viliam Ročkai,
-                        Powered by <a href="https://vuejs.org/">Vue.js</a> and <a href="http://chriskempson.com/projects/base16/">Base16</a>,
-                        <a href="https://github.com/vrockai/vrockai.github.io">page sources on github</a>
+                        Powered by <a href="https://vuejs.org/">Vue.js</a> and <a href="http://chriskempson.com/projects/base16/">Base16</a>.
+                        Feel free to grab <a href="https://github.com/vrockai/vrockai.github.io">page sources on Github</a>.
                     </div>
                 </div>
             </div>

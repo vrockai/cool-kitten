@@ -5,9 +5,9 @@
         </template>
         <template slot="body">
             <div class="row">
-                <div class="col-6" v-for="paperList in publications">
+                <div class="col-6" v-for="column in publications">
                     <ul>
-                        <li v-for="year in paperList" v-key="year.year" class="mt-4 mb-2">
+                        <li v-for="year in column" v-key="year.year" class="mt-4 mb-2">
                             <h4>{{year.year}}</h4>
 
                             <ul class="fa-ul">

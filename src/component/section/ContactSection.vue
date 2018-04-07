@@ -6,8 +6,7 @@
         <template slot="body">
             <div class="row">
                 <div class="col-12">
-                    <p>You can reach me at viliam.rockai(at)gmail.com</p>
-                    <p>You can follow me here:</p>
+                    <p>You can reach me at <code>viliam.rockai(at)gmail.com</code>.</p>
                     <p>
                         <a href="http://www.linkedin.com/in/rockaiv" class="icon icon-linkedin"
                            title="LinkedIn">
