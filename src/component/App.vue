@@ -4,7 +4,7 @@
 
                 <div class="container vr-content">
                     <nav class="navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-brand" href="#">Dr. Viliam Ročkai, PhD.</a>
+                        <a class="navbar-brand" href="#">Viliam Ročkai, PhD.</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
