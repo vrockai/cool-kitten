@@ -4,33 +4,6 @@
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
-body {
-
-}
-/*
-.card {
-    overflow: hidden;
-    margin-bottom: 1em;
-}
-
-.card img {
-    border: 1em solid $white !important;
-}
-
-.card p {
-
-}
-
-a > .card-img-top {
-    transition: 1s ease-in-out;
-}
-
-a > .card-img-top:hover {
-    transform: scale(1.05);
-    filter: sepia(10%);
-}
-*/
-
 .badge {
     padding: 0.35em 0.4em 0.1em 0.5em
 }
@@ -186,20 +159,20 @@ $company-border: 2rem;
 }
 
 /* Social icons */
-
+$social-icon-size: 5rem;
 a.icon {
 
     display: inline-block;
-    height: 64px;
-    line-height: 64px;
-    width: 64px;
-    margin: 5px;
+    height: $social-icon-size;
+    line-height: $social-icon-size;
+    width: $social-icon-size;
+
     text-align: center;
     vertical-align: middle;
 
     i {
         color: white;
-        line-height: 4rem;
+        line-height: $social-icon-size;
     }
 
     &.icon-linkedin {
@@ -227,13 +200,19 @@ a.icon {
     margin-top: 2rem;
 }
 
-.card {
+
+.vr-company .card {
     background-color: $base07;
-    height: 20rem;
+    max-height: 20rem;
     overflow: hidden;
     img {
         // max-height: 20rem;
     }
+}
+
+.bg-dark .card {
+    background-color: $base06;
+
 }
 .card-img-overlay {
     opacity: 0;

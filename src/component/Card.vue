@@ -1,8 +1,6 @@
 <template>
     <div class="card">
         <img class="card-img-top" :src="project.thumbnail" :alt="project.title">
-        <div class="card-body">
-        </div>
 
         <div class="card-img-overlay">
             <a class="pull-right" :href="project.url">

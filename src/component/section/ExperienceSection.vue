@@ -15,9 +15,11 @@
             Responsible for the front-end development, deployment and QA. Building complex SPAs in domain of genomics.
             Automating the BE and FE deployment with Bash scripts. Jenkins installation, administration and maintenance.
 
-            <badge-list
+            <badge-list :badges="accumulateBadges(experience[0].portfolio)"></badge-list>
+
+            <!--badge-list
                 :badges="['Angular', 'AngularJS', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS', 'Wordpress', 'Webpack',
-                'Jenkins', 'Cypress.io',  'Docker', 'Keycloak', 'MySQL']"></badge-List>
+                'Jenkins', 'Cypress.io',  'Docker', 'Keycloak', 'MySQL']"></badge-List-->
         </company>
 
         <company logoUrl="img/logo/redhat.png"
@@ -31,7 +33,8 @@
                 mostly Redhat technologies.
             </p>
 
-            <badge-list :badges="['AngularJS', 'JSF', 'RichFaces', 'J2EE', 'JBoss AS', 'Wildfly']"></badge-List>
+            <badge-list :badges="accumulateBadges(experience[1].portfolio)"></badge-list>
+            <!--badge-list :badges="['AngularJS', 'JSF', 'RichFaces', 'J2EE', 'JBoss AS', 'Wildfly']"></badge-List-->
 
             <span class="mt-4">&nbsp;</span>
 
@@ -55,7 +58,7 @@
                 (pair) programming and test driven development.
             </p>
 
-            <badge-list :badges="['J2EE', 'JBoss AS']"></badge-List>
+            <badge-list :badges="['J2EE', 'JBoss AS', 'JBoss Portal']"></badge-List>
         </company>
 
         <company logoUrl="img/logo/siemens.png"
@@ -74,6 +77,7 @@
 </template>
 
 <script>
+    import _ from 'lodash';
     import AboutSection from './AboutSection.vue';
     import BadgeList from '../BadgeList.vue';
     import Company from '../Company.vue';
@@ -162,6 +166,13 @@
                         badges: ['Jenkins', 'Selenium', 'JBoss AS']
                     }]
                 }]
+            }
+        }, methods: {
+            accumulateBadges: function(portfolio) {
+                return _.map(portfolio, project => project.badges)
+                    .reduce((badgeList, badges) => {
+                        return _.union(badgeList, badges);
+                    }, {});
             }
         }
     }
