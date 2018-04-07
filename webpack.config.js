@@ -3,6 +3,7 @@ const precss = require('precss');
 const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -12,6 +13,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      favicon: './src/favicon.png'
+    }),
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       {from: '*.html', to: './'},

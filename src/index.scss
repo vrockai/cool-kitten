@@ -4,8 +4,9 @@
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 
-body {
-    font-weight: 300;
+
+b {
+    font-weight: 600;
 }
 p {
     @extend .text-justify;
@@ -27,10 +28,6 @@ p {
 
 .img-circle {
     border-radius: 50%;
-}
-
-.preurl {
-    margin-bottom: 0;
 }
 
 section {

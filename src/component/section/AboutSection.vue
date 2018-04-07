@@ -1,5 +1,5 @@
 <template>
-    <vr-section section-class="bg-dark text-white">
+    <vr-section section-class="bg-dark text-white" id="about">
         <template slot="body">
             <div class="row mt-4" id="info">
                 <div class="col-xs-12 col">
@@ -13,15 +13,24 @@
                         open-source and a long-term Linux user.
                     </p>
 
-                    <p class="mb-0">
+                    <p>
                         I'm interested in the domain of genomics, artificial intelligence and front-end development.
                         I specifically care about:
                     </p>
-                    <ul>
-                        <li>Getting things done ("stop starting, start finishing").</li>
-                        <li>Code readability.</li>
-                        <li>Learning new stuff from various areas.</li>
-                        <li>Documentation.</li>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-check-circle"></i>
+                            Getting things done ("stop starting, start finishing").
+                        </li>
+                        <li> <i class="fa-li fa fa-eye"></i>
+                            Code readability.
+                        </li>
+                        <li> <i class="fa-li fa fa-graduation-cap"></i>
+                            Learning new stuff from various areas.
+                        </li>
+                        <li> <i class="fa-li fa fa-book"></i>
+                            Documentation.
+                        </li>
                     </ul>
 
                     <p>
