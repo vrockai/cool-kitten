@@ -1,9 +1,10 @@
 @import "custom";
-@import "~bootstrap/scss/bootstrap";
+
+@import "required-bootstrap";
+@import "custom-bootstrap";
 
 $fa-font-path: "~font-awesome/fonts/";
-@import "~font-awesome/scss/font-awesome";
-
+@import "required-fa";
 
 b {
     font-weight: 600;
