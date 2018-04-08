@@ -40,7 +40,7 @@
 
                     <p>
                         Over the last decade, I have been very lucky to enjoy a true passion for the projects and jobs
-                        that I have been apart of, not just working on them to earn a living. I look for meaningful and
+                        that I have been a part of, not just working on them to earn a living. I look for meaningful and
                         impactful challenges to pursue and it is my goal to make a real difference through the work that
                         I do. <b>Life is short, let's do stuff that matters</b>.
                     </p>

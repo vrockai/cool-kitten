@@ -10,7 +10,7 @@
                  :projects="experience[0].portfolio"
                  class="vr-company-dnastack">
             <h4>2015 - </h4>
-            <h3 class="d-inline d-md-none">DNAstack</h3>
+            <h3 class="d-inline d-md-none">{{experience[0].name}}</h3>
             <h3>Senior Front-End Engineer</h3>
 
             <p>
@@ -25,11 +25,11 @@
                  :projects="experience[1].portfolio"
                  class="vr-company-redhat">
             <h4>2012 - 2015</h4>
-            <h3 class="d-inline d-md-none">Redhat</h3>
+            <h3 class="d-inline d-md-none">{{experience[1].name}}</h3>
             <h3>Senior Front-End Engineer</h3>
 
             <p>
-                FE (AngularJS) and BE (J2EE) development on several Redhat projects using mostly Redhat technologies.
+                FE (AngularJS) and BE (Java EE) development on several Red Hat projects using mostly Red Hat technologies.
             </p>
 
             <badge-list :badges="accumulateBadges(experience[1].portfolio)"></badge-list>
@@ -37,14 +37,14 @@
             <span class="mt-4">&nbsp;</span>
 
             <h4 class="mt-4" id="qaexperience">2008 - 2012</h4>
-            <h3 class="d-inline d-md-none">Redhat</h3>
+            <h3 class="d-inline d-md-none">{{experience[1].name}}</h3>
             <h3>QA Engineer</h3>
             <p>
                 QA (automated UI and performance testing) of the JBoss Portal project (later GateIn) and related
                 projects. Covered the whole JBoss Portal project with UI tests (Selenium). Improved the performance of
                 the Picketlink project by tweaking Hibernate settings as a part of performance QA.
             </p>
-            <badge-list :badges="['Jenkins', 'J2EE', 'Selenium', 'Hibernate']"></badge-List>
+            <badge-list :badges="['Jenkins', 'Java EE', 'Selenium', 'Hibernate']"></badge-List>
         </company>
 
         <company logoUrl="img/logo/acision.png"
@@ -58,7 +58,7 @@
                 (pair) programming and test driven development.
             </p>
 
-            <badge-list :badges="['J2EE', 'JBoss AS', 'JBoss Portal']"></badge-List>
+            <badge-list :badges="['Java EE', 'JBoss AS', 'JBoss Portal']"></badge-List>
         </company>
 
         <company logoUrl="img/logo/siemens.png"
@@ -129,7 +129,7 @@
                         badges: ['Angular', 'Bootstrap', 'Jenkins', 'Docker', 'Keycloak']
                     }]
                 }, {
-                    name: 'Redhat',
+                    name: 'Red Hat',
                     portfolio: [{
                         title: 'Hawkular',
                         thumbnail: 'img/project/hawkular.png',
@@ -143,7 +143,7 @@
                         url: 'https://www.keycloak.org/about.html',
                         description: 'An open source Identity and Access Management solution.',
                         role: 'BE and FE development, UX and tooling. Started as a BE developer by introducing (Freemarker) templating to the theme engine and transitioned to the FE developer role.',
-                        badges: ['AngularJS', 'J2EE', 'Wildfly']
+                        badges: ['AngularJS', 'Java EE', 'WildFly']
                     }, {
                         title: 'LiveOak',
                         thumbnail: 'img/project/liveoak.png',
@@ -157,7 +157,7 @@
                         url: 'http://gatein.jboss.org/',
                         description: 'An intuitive user-friendly portal, and a framework addressing the needs of Web 2.0 applications.',
                         role: 'BE and FE development.',
-                        badges: ['JSP', 'JSF', 'J2EE', 'JBoss AS']
+                        badges: ['JSP', 'JSF', 'Java EE', 'JBoss AS']
                     }, {
                         title: 'JBoss Portal',
                         thumbnail: 'img/project/portal.png',

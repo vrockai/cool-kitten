@@ -29,7 +29,7 @@
                 return ['Jenkins', 'Cypress.io', 'Selenium'].indexOf(badge) > -1;
             },
             isBeBadge: function (badge) {
-                return ['Docker', 'Keycloak', 'MySQL', 'J2EE', 'JBoss AS', 'JBoss Portal', 'Wildfly', 'Hibernate'].indexOf(badge) > -1;
+                return ['Docker', 'Keycloak', 'MySQL', 'Java EE', 'JBoss AS', 'JBoss Portal', 'WildFly', 'Hibernate'].indexOf(badge) > -1;
             },
             sortByBadgeType: function (badgeList) {
                 return _.sortBy(badgeList, (badge) => {
