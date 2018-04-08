@@ -12,7 +12,7 @@
                         <div class="collapse navbar-collapse" id="navbarText">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="https://vrockai.github.io/blog/">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#experience">Experience</a>
