@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index.js',
@@ -21,8 +22,10 @@ module.exports = {
       jQuery: 'jquery',
       $: 'jquery',
       //jquery: 'jquery',
-      Popper: 'popper.js'
-    })
+      Popper: 'popper.js',
+      Util: "bootstrap/js/dist/util"
+    }),
+    //new BundleAnalyzerPlugin()
   ],
   module: {
     rules: [

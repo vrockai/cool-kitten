@@ -78,7 +78,9 @@
 </template>
 
 <script>
-    import _ from 'lodash';
+    import map from 'lodash/map';
+    import reduce from 'lodash/reduce';
+    import union from 'lodash/union';
     import AboutSection from './AboutSection.vue';
     import BadgeList from '../BadgeList.vue';
     import Company from '../section/CompanySection.vue';
@@ -170,10 +172,10 @@
             }
         }, methods: {
             accumulateBadges: function (portfolio) {
-                return _.map(portfolio, project => project.badges)
-                    .reduce((badgeList, badges) => {
-                        return _.union(badgeList, badges);
-                    }, {});
+                const badges = map(portfolio, project => project.badges);
+                return reduce(badges, (badgeList, badges) => {
+                    return union(badgeList, badges);
+                }, {});
             }
         }
     }

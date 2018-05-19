@@ -1,6 +1,6 @@
 import 'jquery';
-import 'popper.js';
-import 'bootstrap';
+import 'bootstrap/js/dist/util';
+import 'bootstrap/js/dist/collapse';
 
 import './index.scss';
 import './favicon.png';

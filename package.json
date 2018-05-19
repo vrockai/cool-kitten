@@ -5,6 +5,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --config webpack.config.js",
     "build": "webpack --config webpack.config.js --mode production",
     "serve": "webpack-dev-server --inline --mode development --watch",
     "deploy": "gh-pages -d dist -b master"
@@ -30,6 +31,7 @@
     "vue-loader": "^14.1.1",
     "vue-template-compiler": "^2.5.13",
     "webpack": "^4.4.1",
+    "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.1"
   },
@@ -41,7 +43,6 @@
     "font-awesome-webpack-2": "^1.0.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.5",
-    "popper.js": "^1.12.9",
     "vue": "^2.5.13"
   }
 }

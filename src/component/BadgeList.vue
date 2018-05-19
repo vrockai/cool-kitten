@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import _ from 'lodash';
+    import sortBy from 'lodash/sortBy';
 
     export default {
         props: ['badges'],
@@ -32,7 +32,7 @@
                 return ['Docker', 'Keycloak', 'MySQL', 'Java EE', 'JBoss AS', 'JBoss Portal', 'WildFly', 'Hibernate'].indexOf(badge) > -1;
             },
             sortByBadgeType: function (badgeList) {
-                return _.sortBy(badgeList, (badge) => {
+                return sortBy(badgeList, (badge) => {
                     if (this.isFeBadge(badge)) {
                         return 1;
                     }
