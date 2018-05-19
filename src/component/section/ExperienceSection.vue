@@ -11,7 +11,7 @@
                  class="vr-company-dnastack">
             <h4>2015 - </h4>
             <h3 class="d-inline d-md-none">{{experience[0].name}}</h3>
-            <h3>Senior Front-End Engineer</h3>
+            <h3>Senior Front-End Developer</h3>
 
             <p>
                 Front-end development, deployment and QA. Building of complex SPAs in the domain of genomics. Automating
@@ -26,7 +26,7 @@
                  class="vr-company-redhat">
             <h4>2012 - 2015</h4>
             <h3 class="d-inline d-md-none">{{experience[1].name}}</h3>
-            <h3>Senior Front-End Engineer</h3>
+            <h3>Software Developer</h3>
 
             <p>
                 FE (AngularJS) and BE (Java EE) development on several Red Hat projects using mostly Red Hat technologies.
@@ -51,7 +51,7 @@
                  class="vr-company-acision">
             <h4>2006 - 2008</h4>
             <h3 class="d-inline d-md-none">Acision</h3>
-            <h3>Software Engineer</h3>
+            <h3>Software Developer</h3>
 
             <p>
                 Junior BE developer working on in-house projects based on JBoss Portal. First experience with agile
@@ -65,10 +65,10 @@
                  class="vr-company-siemens">
             <h4>2005 - 2006</h4>
             <h3 class="d-inline d-md-none">Siemens</h3>
-            <h3>Software Engineer</h3>
+            <h3>Software Developer</h3>
 
             <p>
-                Software engineer responsible for development and maintenance of an Eigner-PLM product. The product was
+                Software developer responsible for development and maintenance of an Eigner-PLM product. The product was
                 a very custom piece of technology (similar to SAP) highly reliable on an Oracle DB.
             </p>
 
