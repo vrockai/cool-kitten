@@ -111,7 +111,7 @@
                     }, {
                         title: 'Beacon Network',
                         thumbnail: 'img/project/bn.png',
-                        url: 'https://app.dnastack.com',
+                        url: 'https://beacon-network.org',
                         description: 'A search engine across the world\'s public beacons enabling global discovery of genetic mutations, federated across a network of shared genetic datasets.',
                         role: 'Core FE application architecture, UX, design, development, tooling and deployment.',
                         badges: ['AngularJS', 'Bootstrap', 'D3.js', 'Gulp', 'Jenkins', 'Cypress.io', 'Docker', 'Keycloak']
