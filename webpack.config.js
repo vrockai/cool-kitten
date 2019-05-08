@@ -16,7 +16,8 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       {from: '*.html', to: './'},
-      {from: 'img/**/*', to: './'}
+      {from: 'img/**/*', to: './'},
+      {from: 'favicon.png', to: './'}
     ], {context: 'src'}),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
