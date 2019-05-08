@@ -10,3 +10,8 @@ css/style.min.css
 *.iml
 node_modules
 lib
+
+cv/
+!cv/cv.pdf
+!cv/cv.tex
+!cv/tccv.cls

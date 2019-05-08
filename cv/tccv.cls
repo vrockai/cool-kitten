@@ -75,7 +75,6 @@
     \begin{center}
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
-	{\fontfamily{bch}\selectfont\Huge Curriculum vitae}
 	\bigskip
     \end{center}]}
 
