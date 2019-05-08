@@ -140,6 +140,13 @@
                         role: 'FE development and tooling.',
                         badges: ['AngularJS', 'Gulp']
                     }, {
+                        title: 'Angular Patternfly',
+                        thumbnail: 'img/project/angpf.png',
+                        url: 'https://github.com/patternfly/angular-patternfly',
+                        description: 'A set of common AngularJS components for use with the PatternFly reference implementation.',
+                        role: 'Founded a company-wide used library of AngularJS components.',
+                        badges: ['AngularJS', 'Gulp']
+                    }, {
                         title: 'Keycloak',
                         thumbnail: 'img/project/keycloak.jpeg',
                         url: 'https://www.keycloak.org/about.html',
