@@ -17,7 +17,8 @@ module.exports = {
     new CopyWebpackPlugin([
       {from: '*.html', to: './'},
       {from: 'img/**/*', to: './'},
-      {from: 'favicon.png', to: './'}
+      {from: 'favicon.png', to: './'},
+      {from: '../cv/cv.pdf', to: './vrockai-cv.pdf'}
     ], {context: 'src'}),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',

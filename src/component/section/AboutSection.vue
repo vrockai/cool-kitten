@@ -44,6 +44,13 @@
                         impactful challenges to pursue and it is my goal to make a real difference through the work that
                         I do. <b>Life is short, let's do stuff that matters</b>.
                     </p>
+
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-download"></i>
+                            <a href="/vrockai-cv.pdf">CV Download</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="d-none d-md-block col-4">

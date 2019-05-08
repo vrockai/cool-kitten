@@ -27,6 +27,13 @@
                             <i class="fa fa-3x fa-twitter" aria-hidden="true"></i>
                         </a>
                     </p>
+
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa-li fa fa-download"></i>
+                            <a href="/vrockai-cv.pdf">CV Download</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </template>
