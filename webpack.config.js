@@ -18,6 +18,7 @@ module.exports = {
       {from: '*.html', to: './'},
       {from: 'img/**/*', to: './'},
       {from: 'favicon.png', to: './'},
+      {from: 'site.webmanifest', to: './'},
       {from: '../cv/cv.pdf', to: './vrockai-cv.pdf'}
     ], {context: 'src'}),
     new webpack.ProvidePlugin({
