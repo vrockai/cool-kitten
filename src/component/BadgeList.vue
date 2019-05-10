@@ -16,14 +16,14 @@
         methods: {
             badgeClass: function (badge) {
                 return {
-                    'badge-primary': this.isFeBadge(badge),
+                    'badge-danger': this.isFeBadge(badge),
                     'badge-info': this.isQaBadge(badge),
                     'badge-secondary': this.isBeBadge(badge),
                     'badge-success': !this.isFeBadge(badge) && !this.isQaBadge(badge) && !this.isBeBadge(badge)
                 }
             },
             isFeBadge: function (badge) {
-                return ['Angular', 'AngularJS', 'React', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS', 'WordPress', 'Webpack', 'JSF', 'JSP', 'RichFaces'].indexOf(badge) > -1;
+                return ['Angular', 'AngularJS', 'React', 'Bootstrap', 'D3.js', 'Gulp', 'ReactJS', 'WordPress', 'Webpack', 'JSF', 'JSP', 'RichFaces', 'Material'].indexOf(badge) > -1;
             },
             isQaBadge: function (badge) {
                 return ['Jenkins', 'Cypress.io', 'Selenium'].indexOf(badge) > -1;

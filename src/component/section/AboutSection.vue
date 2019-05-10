@@ -44,19 +44,16 @@
                         impactful challenges to pursue and it is my goal to make a real difference through the work that
                         I do. <b>Life is short, let's do stuff that matters</b>.
                     </p>
-
-                    <ul class="fa-ul">
-                        <li>
-                            <i class="fa-li fa fa-download"></i>
-                            <a href="/vrockai-cv.pdf">CV Download</a>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="d-none d-md-block col-4">
                     <div class="row">
-                        <div class="col">
+                        <div class="col vr-face">
                             <img class="img-circle" src="img/face.svg" width="100%">
+                            <a class="btn btn-primary btn-lg" role="button" href="/vrockai-cv.pdf">
+                                <i class="fa fa-file-pdf-o"></i>
+                                Download CV
+                            </a>
                         </div>
                     </div>
                 </div>

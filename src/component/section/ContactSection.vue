@@ -30,8 +30,8 @@
 
                     <ul class="fa-ul">
                         <li>
-                            <i class="fa-li fa fa-download"></i>
-                            <a href="/vrockai-cv.pdf">CV Download</a>
+                            <i class="fa-li fa fa-file-pdf-o"></i>
+                            <a href="/vrockai-cv.pdf">Curriculum Vitae</a>
                         </li>
                     </ul>
                 </div>

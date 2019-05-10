@@ -95,6 +95,19 @@
                 experience: [{
                     name: 'DNAstack',
                     portfolio: [{
+                        title: 'Data Discovery and Access Platform',
+                        thumbnail: 'img/project/ddap.png',
+                        description: 'The Data Discovery and Access Platform is a platform that securely exposes data in a way that is discoverable and facilitates access for running analysis in the cloud.',
+                        role: 'Core FE application architecture, development, tooling.',
+                        badges: ['Angular', 'Material', 'Jenkins']
+                    }, {
+                        title: 'TCAG Transfer Portal',
+                        thumbnail: 'img/project/tcag.png',
+                        url: 'https://data-portal.tcag.ca/',
+                        description: 'A web-based data portal for distribution of TCAG (genomic) data.',
+                        role: 'Core FE application architecture, development, tooling.',
+                        badges: ['Angular', 'Keycloak']
+                    }, {
                         title: 'DNAstack Platform',
                         thumbnail: 'img/project/dnastack.png',
                         url: 'https://app.dnastack.com',

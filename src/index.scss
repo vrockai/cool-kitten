@@ -9,8 +9,21 @@ $fa-font-path: "~font-awesome/fonts/";
 b {
     font-weight: 600;
 }
+
 p {
     @extend .text-justify;
+}
+
+a.btn {
+    text-decoration: none;
+
+    i {
+        margin-right: 0.5rem;
+    }
+}
+
+.btn-lg {
+    line-height: 2em;
 }
 
 .badge {
@@ -25,6 +38,10 @@ p {
             width: 75%;
         }
     }
+}
+
+.vr-face {
+    text-align: center;
 }
 
 .img-circle {
