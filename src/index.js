@@ -1,6 +1,5 @@
 import 'jquery';
-import 'bootstrap/js/dist/util';
-import 'bootstrap/js/dist/collapse';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 import './index.scss';
 import './favicon.png';
