@@ -3,7 +3,6 @@
         <template slot="body">
             <div class="row mt-4" id="info">
                 <div class="col-xs-12 col">
-                    <h1>Available for hire Sept/Oct 2019</h1>
                     <p>
                         I'm a full stack software engineer with a <a href="#experience">broad range</a> of experience
                         and a passion for writing good quality code. Instead of focusing on a single technology I

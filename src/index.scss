@@ -98,7 +98,8 @@ $company-border-sm: 0.25rem;
 .vr-company:last-child {
     border-bottom: $company-border solid transparent;
 }
-.vr-company-dnastack {
+
+.vr-company-exponea {
     position: relative;
 
     &:after {
@@ -108,6 +109,19 @@ $company-border-sm: 0.25rem;
         left: 0;
         height: 100%;
         border-top: $company-border solid transparent;
+        border-left: $company-border solid #fed501;
+    }
+}
+
+.vr-company-dnastack {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
         border-left: $company-border solid #1c84ca;
     }
 }

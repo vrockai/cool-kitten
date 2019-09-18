@@ -6,10 +6,19 @@
             </template>
         </vr-section>
 
+        <company logoUrl="img/logo/exponea.png"
+                 class="vr-company-exponea">
+            <h4>2019 - </h4>
+            <h3 class="d-inline d-md-none">Exponea</h3>
+            <h3>Senior Front-End Developer</h3>
+
+            <badge-list :badges="[]"></badge-List>
+        </company>
+
         <company logoUrl="img/logo/dnastack.png"
                  :projects="experience[0].portfolio"
                  class="vr-company-dnastack">
-            <h4>2015 - </h4>
+            <h4>2015 - 2019</h4>
             <h3 class="d-inline d-md-none">{{experience[0].name}}</h3>
             <h3>Senior Front-End Developer</h3>
 

@@ -1,7 +1,6 @@
 <template>
     <div>
         <div id="navigation" class="container-fluid bg-darker">
-
                 <div class="container vr-content">
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <a class="navbar-brand" href="#">Viliam Ročkai, PhD.</a>
